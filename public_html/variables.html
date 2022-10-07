@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset= "UTF8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title> Variables</title>
+</head>
+
+<body>
+
+<p id= "storage">
+</p>
+<p id= "storage1">
+</p>
+<p id= "storage2">
+</p>
+<script>
+    var firstName="Frederik";
+    console.log(firstName) ;
+    var lastName="Block";
+    console.log(lastName);
+    var fullName = "Etunimi on: " + firstName + "Sukunimi on:" + lastName;
+    console.log(fullName);
+    document.getElementById("storage").innerHTML = fullName;
+    var x=2;
+    console.log(x);
+    var y=4;
+    console.log(y);
+    var NameNumbers = "Etunimi ja x+y " + firstName + x + y;
+    console.log(NameNumbers);
+    document.getElementById("storage1").innerHTML = NameNumbers;
+    var NumbersName = "x+y ja Sukunimi "  + x + y + lastName;
+    console.log(NumbersName);
+    document.getElementById("storage2").innerHTML = NumbersName;
+   
+    console.log (typeof firstName);
+</script>
+</body>
+</html>

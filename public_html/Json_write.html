@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Write comment</h2>
+
+<button onclick="myFunction()">Comment</button>
+
+<p id="demo"></p>
+
+const fs = require('fs');
+
+<script>
+function myFunction() {
+
+var txt;
+  var comment = prompt("Write a comment");
+  if (comment == null || comment == "") {
+    
+  } else {
+    txt = comment ;
+  }
+  var myJSON = JSON.stringify(txt);
+document.getElementById("demo").innerHTML = myJSON;
+}
+
+fs.writeFile('user.json', data, (err) => {
+    if (err) {
+        throw err;
+    }
+    console.log("JSON data is saved.");
+});
+</script>
+
+</body>
+</html>

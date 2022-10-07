@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--
+html declares the code language the code uses. lang="en" declares in what language the webpage is.
+-->
+<html lang="en">
+
+<!-- Head declares the start of a section of certain code (mostly what style the webpage uses and the size of the page on your viewing tool,
+ which set of characters the page is supposed to recognise and what files the webpage is supposed to access) -->
+<head>
+
+<!-- title tells the webpage what it is supposed to call the tab it has been opened in -->
+   <title> Frederik Block </title>
+
+<!-- meta tells the webpage things like the size the page is supposed to be compared to the screen of the viewing device.
+ It also tells the webpage which set of characters it is supposed to use -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <meta Charset= "UTF-8">
+ 
+ <!-- link rel tells the web page to call on the file declared in href and what kind of file it is so the page can apply the code in files linked.
+ Mostly used for css files to externaly change the look of the webpage -->
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "http://www.cc.puv.fi/~e2001033/WebPageLayout.css" />
+   
+
+   
+ </head>
+ 
+ <!-- the body tag holds everything the webpage is supposed to show on screen. like text, images and links to external sites -->
+<body>
+
+<!-- h stands for heading headings go up to 6 the smaller the number after h the more important the heading is viewed as and the bigger it is,
+ if the font-size hasn't been changed. Headings are text that tells you what the upcoming text is about. -->
+<h1>Main Page</h1>
+
+<!-- ul starts a list which means it puts the text parts in it underneath each other. 
+ul is unordered list which marks the text with dots infront of them, 
+ol means ordered list which is marked by numbers and is good for things like a timeline list -->
+<ul>
+
+<!-- li declares the part of a list, you can put links, text and things like that into li tags to add them to the list -->
+<li><a href="http://www.cc.puv.fi/~e2001033/texts.html"  id=link2>Texts</a></li>
+<li><a href="http://www.cc.puv.fi/~e2001033/links.html"  id=link3>Links</a></li>
+<li><a href="http://www.cc.puv.fi/~e2001033/tables.html"  id=link4>Tables</a></li>
+<li><a href="http://www.cc.puv.fi/~e2001033/CV_Block_Frederik.pdf">CV</a></li>
+<li><a href="http://www.cc.puv.fi/~e2001033/Studies.html">Studies</a></li>
+</ul>
+
+<!-- the pre tag declares a part of text that the webpage is supposed to segment the way it has been written in the code. 
+for normal text you can also use the p tag which will string the text together -->
+<pre>
+My name is Frederik Angelo Block.
+I am an Engineering student at the 
+University of applied science in Vaasa.
+ </pre>
+ 
+ <!-- div stands for division and is used to define a part of the code to make it easier to edit without editing each part individualy -->
+<div></div>
+
+<!-- img stands for image and is used to add images to the page.
+alt tells the page to show the text instead if it can't load or find the image.
+src declares the name or link of the image.
+style declares what the pictures size is. -->
+<img src="http://www.cc.puv.fi/~e2001033/Vamk.jpg" alt="Vamk Building"
+style="width:300px;height:150px;"> 
+<img src="http://www.cc.puv.fi/~e2001033/Me.jpg" alt="My picture"
+style="width:150px;height:150px;"> 
+<div></div>
+
+<!-- footer is at the bottom of the screen and is normaly used for things like declaring the copyright owner and year -->
+<footer>©Frederik Block 2020</footer>
+
+<!-- the /tag declares the end of the tag and part of the code -->
+
+</body>
+</html>

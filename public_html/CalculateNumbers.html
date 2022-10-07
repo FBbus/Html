@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta= Charset="UTF8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+function myFunction() {
+  var Number1 = Number(document.getElementById("Number1").value) ;
+  var Number2 = Number(document.getElementById("Number2").value) ;
+  area = Number1 + Number2;
+  document.getElementById("result").innerHTML = "The area is" + area.toFixed(2);
+}
+</script>
+</head>
+<body>
+
+Number1: <input type="Number" id="Number1">
+Number2: <input type="Number" id="Number2">
+
+<input type="button" value="calculate" onclick="myFunction()">
+
+<p id="result"></p>
+
+
+
+</body>
+</html>

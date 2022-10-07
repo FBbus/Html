@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta= Charset="UTF8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+<body>
+
+<h2>foods</h2>
+<p></p>
+
+<p id="demo"></p>
+
+<script>
+var foods, text, fLen, i;
+foods = ["Ramen", "Pizza", "Pasta", "Lasagne"];
+fLen = foods.length;
+
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + foods[i] + "</li>";
+}
+text += "</ul>";
+text += foods.length;
+
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+

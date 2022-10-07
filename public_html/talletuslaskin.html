@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta= Charset="UTF8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+table, th, td {
+  border: 5px solid black;
+}
+</style>
+</head>
+<body>
+
+<p id="talletus"></p>
+
+
+<script>
+
+var summa = Number (prompt ("kuinka paljon rahaa talletit?"));
+var korko = Number(prompt ("Mikä on pankin korkoprosentti?"));
+var aika = Number(prompt ("Kuinka monen vuoden päähän aiot tallettaa rahat?"));
+var i = 1;
+
+
+var result = "<table><tr><th>aika</th><th>summa</th></tr>";
+
+
+while (i <= aika) {
+  var total = summa * Math.pow(1+ korko/100, i);
+  result = result+ "<tr><td>" + i + "</td><td>" + total.toFixed(2) + "</td></tr>";
+  i++;
+}
+result = result + "</table>"
+document.getElementById("talletus").innerHTML = result;
+</script>
+
+</body>
+</html>

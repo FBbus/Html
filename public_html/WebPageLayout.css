@@ -1,0 +1,48 @@
+<style>
+
+ f{}
+  
+  body{ background-color: lightblue;}
+  
+  @media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+}
+
+ h1{
+ padding:2px;
+ text-align: center;
+ background-color: black;
+ font-size: 40px;
+ color: white;}
+ 
+ ul{
+	 float: left;
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 900px;}
+ 
+ a{
+ color: grey;
+ font-size: 30px;}
+ 
+ pre {text-align: right;
+ font-size: 15px;
+ float:left;
+ width:350px;
+ height: 150px;}
+ 
+ 
+ div {background-color: skyblue;
+ padding: 10px;
+ width: 100%;}
+ 
+ footer {
+ background-color: turquoise;
+ text-align: center;}
+ 
+ 
+ 
+ </style>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta= Charset="UTF8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+<body>
+
+<h2>Contact</h2>
+
+<p id="demo"></p>
+
+<script>
+var Names = ["Klade", "Viivi", "Riki", "Kaija"];
+var Numbers = [458325, 568321, 958760, 351095];
+
+var Nimi = prompt ("Ketä etsit");
+
+var Namelength = Names.length;
+var Number;
+var result = "";
+var found = false;
+
+for(i = 0; i < Names.length; i++ ) {
+if (Names[i] == Nimi){
+Number = Numbers[i];
+result = Nimi + "n numero on" + Number;
+found = true;
+  }
+}
+if (found == false){
+result = Nimi + "ei löytynyt listalta";
+}
+
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>
+
